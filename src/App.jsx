@@ -6,6 +6,8 @@ import "./App.css";
 import ClearButton from "./components/ClearButton";
 import TextBox from "./components/TextBox.jsx";
 import CounterHistory from "./components/CounterHistory.jsx";
+import Timer from "./components/Timer.jsx";
+import ClickMeButton from "./components/ClickMeButton.jsx";
 
 function App() {
   const use_ref = useRef(null);
@@ -14,6 +16,7 @@ function App() {
   function printValue() {
     setShowInput(use_ref.current.value);
   }
+
   return (
     <>
       {/* //task1 */}
@@ -26,6 +29,12 @@ function App() {
 
       {/* //task of counter history */}
       {/* <CounterHistory /> */}
+
+      {/* //task of timer with state and with the Ref */}
+      {/* <Timer /> */}
+
+      {/* //task of the counter with ref and state*/}
+      <ClickMeButton />
     </>
   );
 }
